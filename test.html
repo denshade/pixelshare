@@ -4,7 +4,7 @@
         <textarea id="log"></textarea>
         <script>
             document.getElementById("log").textContent += "HELLO!";
-            var conn = new WebSocket('ws://localhost:8080');
+            var conn = new WebSocket('ws://localhost:8080/');
             conn.onopen = function(e) {
                 document.getElementById("log").textContent += "Connection established!";
             };
